@@ -1,10 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Andy Vadnais</title>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+              integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-</body>
-</html>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+    <body>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" id="menu-btn" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToCourses()">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToExperience()">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToResume()">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToContact()">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid Home">
+
+        <div class="container text-center" id="homeText">
+
+            <h1>Andy Vadnais' Personal Webpage</h1>
+
+
+            <img height="30%" width="30%" src="resources/headshot.png">
+            <h5>
+                Hi there! My name is Andy Vadnais and I'm a senior Software Engineering Student at SUNY Oswego. Here you can
+                find all of the courses I've taken, work experience, links to the projects I've worked on, my skills, and my
+                most up-to-date resume!
+            </h5>
+
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid Courses ">
+        <div class="container text-center hideme">
+            <h1>Courses</h1>
+            <span style="font-size: 20px; color: black;">
+                <i class="fab fa-leanpub"></i>
+            </span>
+
+            <h5>Below is a listing of my relevant coursework with links to course descriptions</h5>
+
+            <div class="row hideme">
+                <div class="column">
+                    <ul style="list-style: none;" class="Courses">
+                        <h4>CS Courses</h4>
+                        <li><a href="http://gee.cs.oswego.edu/dl/csc445/">
+                            <div class="link">CSC445 Computer Networks</div>
+                        </a></li>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=38&coid=55379">
+                            <div class="link">CSC436 Requirements & Safety Engineering</div>
+                        </a></li>
+                        <li>CSC482 Software Deployment (New Course!)</li>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=38&coid=56683">
+                            <div class="link">CSC385 Software Quality</div>
+                        </a></li>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=31&coid=43807">
+                            <div class="link">CSC480 Software Design</div>
+                        </a></li>
+                        <li><a href="http://gee.cs.oswego.edu/dl/csc365/">
+                            <div class="link">CSC365 Data Structures and Algorithms</div>
+                        </a></li>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=36&coid=52147">
+                            <div class="link">CSC380 Software Engineering</div>
+                        </a></li>
+                        <li><a href="http://danielschlegel.org/wp/teaching/csc344-spring-2018/">
+                            <div class="link">CSC344 Programming languages</div>
+                        </a></li>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=38&coid=55363">
+                            <div class="link">CSC322 Systems Programming</div>
+                        </a></li>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=36&coid=52132">
+                            <div class="link">CSC221 Foundation of Computer Science</div>
+                        </a></li>
+                        <br>
+
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul style="list-style: none;" class="Courses">
+                        <h4>Science Courses</h4>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=26&coid=35273">
+                            <div class="link">COG266 Brains, Minds and Consciousness</div>
+                        </a></li>
+                        <li><a href="http://danielschlegel.org/wp/teaching/cog376-spring-2018/">
+                            <div class="link">COG376 Computational Models of Natural Language Processing</div>
+                        </a></li>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=1&coid=6606">
+                            <div class="link">PHY212 Physics 2</div>
+                        </a></li>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=34&coid=49782">
+                            <div class="link">PHY112 Physics 1</div>
+                        </a></li>
+                        <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=34&coid=49414">
+                            <div class="link">ISC300 Ethics & Social Policy in the Digital Age</div>
+                        </a></li>
+                        <li><a href="http://catalog.sunyocc.edu/preview_course_nopop.php?catoid=1&coid=788">
+                            <div class="link">PHI107 Logic</div>
+                        </a></li>
+                        <li>CHE111 General Chemistry (Clarkson Univ.)</li>
+                        <li>EM120 Engineering & Management (Clarkson Univ.)</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                <ul style="list-style: none;" class="Courses">
+                    <h4>Math Courses</h4>
+                    <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=26&coid=35857">
+                        <div class="link">MAT318 Statistics in the Sciences</div>
+                    </a></li>
+                    <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=19&coid=26147">
+                        <div class="link">MAT215 Discrete Mathematics</div>
+                    </a></li>
+                    <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=34&coid=49485">
+                        <div class="link">MAT240 Multivariable Calculus</div>
+                    </a></li>
+                    <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=34&coid=49483">
+                        <div class="link">MAT220 Calculus 2</div>
+                    </a></li>
+                    <li><a href="http://catalog.oswego.edu/preview_course_nopop.php?catoid=36&coid=52616">
+                        <div class="link">MAT210 Calculus 1</div>
+                    </a></li>
+                    <br>
+
+                </ul>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="jumbotron jumbotron-fluid Experience hideme">
+        <div class="container text-center">
+            <h1>Work Experience</h1>
+
+            <span style="font-size: 20px; color: black;">
+                <i class="fas fa-briefcase"></i>
+            </span>
+
+            <br>
+            <br>
+
+            <div class="flip-card hideme" style="margin: 0 auto">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://2s7gjr373w3x22jf92z99mgm5w-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/Hitachi_100.png"
+                             style="width:500px;height:220px;">
+                    </div>
+
+                    <div class="flip-card-back" style="margin: 0 auto">
+                        <h3>Automation Engineer Intern</h3>
+                        <p>May 2018 - Aug 2018</p>
+                        <p>Worked with the Automation and QA teams for Hitachi's flagship product, the Hitachi Content
+                            Platform.
+                            Along with queue triage and bug fixing, I worked closely with a colleague to provide a new tool
+                            to
+                            graphically view queue health and find test case or suite performance by name or ID.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid Resume hideme">
+        <div class="container text-center">
+            <h1>Resume</h1>
+
+            <span style="font-size: 20px; color: black;">
+                <i class="fas fa-file-alt"></i>
+            </span>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="resources/AVResume_02_16_2019.pdf"
+                        allowfullscreen></iframe>
+            </div>
+            <a href="resources/AVResume_02_16_2019.pdf" download> <br>Download Resume</a>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid Contact">
+        <div class="container text-center">
+            <h1>Contact</h1>
+
+            <div class="Contact">
+                <a href="https://www.linkedin.com/in/andrewvadnais/" target="_blank">
+                    <span style="font-size: 50px; color: #0077B5;">
+                        <i class="fab fa-linkedin"></i>
+                    </span>
+                </a>
+                <a href="https://github.com/avadnais" target="_blank">
+                    <span style="font-size: 50px; color:black">
+                        <i class="fab fa-github"></i>
+                    </span>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+    </html>
